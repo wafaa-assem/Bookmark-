@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="vh-100 d-flex align-items-center">
+      <div class="container">
+        <h1 class="text-center mb-5 fw-medium">
+          <span class="position-relative">Bookmarker</span>
+        </h1>
+        <div class="py-5 px-3 form">
+          <h2 class="text-center fs-5">
+            <i class="fa-solid fa-bookmark me-2"></i>Bookmark your favorite
+            sites<i class="fa-solid fa-bookmark ms-2"></i>
+          </h2>
+          <label for="sname" class="mb-2 fw-bold"
+            ><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label
+          >
+          <input
+            id="name"
+            type="text"
+            id="sname"
+            placeholder="Bookmark Name"
+            class="form-control mb-4"
+          />
+          <label for="surl" class="mb-2 fw-bold"
+            ><i class="fa-solid fa-link me-2"></i>Site URL</label
+          >
+          <input
+            id="url"
+            type="url"
+            id="surl"
+            placeholder="Website URL"
+            class="form-control mb-4"
+          />
+          <div class="text-center">
+            <button onclick="getValues()" class="btn btn-warning text-white fs-5">
+              Submit
+            </button>
+          </div>
+        </div>
+        <div>
+          <table class="table mt-5 text-center">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="demo"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
